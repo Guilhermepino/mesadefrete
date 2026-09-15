@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MesaDeFrete</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 30px;
+        }
+
+        .topo {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #f59e0b;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #f59e0b;
+        }
+
+        .principal {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .apresentacao {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .apresentacao h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .apresentacao h1 span {
+            color: #f59e0b;
+        }
+
+        .apresentacao p {
+            font-size: 18px;
+            color: #6b7280;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .botoes {
+            margin-top: 25px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 15px;
+        }
+
+        .botao-principal {
+            background: #f59e0b;
+            color: #111827;
+        }
+
+        .botao-principal:hover {
+            background: #d97706;
+        }
+
+        .botao-secundario {
+            background: white;
+            color: #111827;
+            border: 1px solid #d1d5db;
+        }
+
+        .botao-secundario:hover {
+            background: #f3f4f6;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .card p {
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .icone {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            margin-top: 70px;
+            background: #111827;
+            color: #9ca3af;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            .topo {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .apresentacao h1 {
+                font-size: 32px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .principal {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="topo">
+
+            <div class="logo">
+                MesaDe<span>Frete</span>
+            </div>
+
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Publicar Frete</a>
+                <a href="#">Entrar</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="principal">
+
+        <section class="apresentacao">
+
+            <h1>
+                O seu frete entra em uma <span>mesa de negociação.</span>
+            </h1>
+
+            <p>
+                Conecte embarcadores, transportadoras e motoristas
+                para encontrar as melhores condições de transporte
+                através de uma plataforma de leilão de fretes.
+            </p>
+
+            <div class="botoes">
+
+                <a href="#" class="botao botao-principal">
+                    🚚 Publicar um Frete
+                </a>
+
+                <a href="#" class="botao botao-secundario">
+                    🔎 Ver Fretes Disponíveis
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="cards">
+
+            <div class="card">
+
+                <div class="icone">📦</div>
+
+                <h3>
+                    Publique seu frete
+                </h3>
+
+                <p>
+                    Informe origem, destino, veículo,
+                    peso, cubagem, data e demais informações
+                    necessárias para o transporte.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone">💰</div>
+
+                <h3>
+                    Receba propostas
+                </h3>
+
+                <p>
+                    Transportadores poderão enviar seus
+                    melhores valores para realizar o transporte.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone">🏆</div>
+
+                <h3>
+                    Escolha a melhor proposta
+                </h3>
+
+                <p>
+                    Compare os valores e condições e escolha
+                    a proposta mais interessante para o seu frete.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 MesaDeFrete — Plataforma de negociação de fretes
+
+    </footer>
+
+</body>
+</html>
